@@ -1,9 +1,10 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function AccountIcons () {
   return (
     <div className="flex w-5/6 rounded-md">
-    <button className="bg-[#1A5C94] w-1/3 rounded-md p-1 flex items-center justify-center cursor-pointer">
+    <Link href={"https://www.facebook.com/login"} className="bg-[#1A5C94] w-1/3 rounded-md p-1 flex items-center justify-center cursor-pointer">
       <i>
         <Image
           src={"/svg/facebook.svg"}
@@ -12,8 +13,8 @@ export default function AccountIcons () {
           alt="facebook"
         />
       </i>
-    </button>
-    <button className="bg-[#fff] w-1/3 rounded-md p-1 flex items-center justify-center cursor-pointer">
+    </Link >
+    <Link href={"https://myaccount.google.com/"} className="bg-[#fff] w-1/3 rounded-md p-1 flex items-center justify-center cursor-pointer">
       <i>
         <Image
           src={"/svg/google.svg"}
@@ -22,8 +23,8 @@ export default function AccountIcons () {
           alt="google"
         />
       </i>
-    </button>
-    <button className="bg-[#000] w-1/3 rounded-md p-1 flex items-center justify-center cursor-pointer">
+    </Link >
+    <Link href={"https://support.apple.com/pt-br/111001"} className="bg-[#000] w-1/3 rounded-md p-1 flex items-center justify-center cursor-pointer">
       <i>
         <Image
           src={"/svg/apple.svg"}
@@ -32,7 +33,7 @@ export default function AccountIcons () {
           alt="apple"
         />
       </i>
-    </button>
+    </Link >
   </div>
   )
 }
